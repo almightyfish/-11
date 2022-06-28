@@ -1,0 +1,197 @@
+.body{
+    background-color: black;
+    height: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background-color:black ;
+}
+
+.wrapper header{
+    background-color: black;
+    width: 100%;
+    height: 15vw;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*transform: translate3d(0,-6vw,0);*/
+}
+
+.wrapper header .text-content{
+    color:white;
+    font-size: 6vw;
+    width: 20vw;
+    float:left;
+    margin-left: 2vw;
+    margin-top: 1vw;
+}
+
+.wrapper header .img-content{
+    float:left;
+    width: 70vw;
+
+}
+
+.wrapper header .img-content .img1{
+    float: right;
+    text-align: right;
+    margin-right: 1vw   ;
+    margin-top: 0.5vw;
+}
+
+.wrapper header img{
+    width: 7vw;
+    height: 7vw;
+    align-items: flex-end;
+}
+
+.wrapper .search-box
+{
+    width: 90%;
+    margin-left: 4vw;
+    height: 10vw;
+    position: absolute;
+    /*background-color: #1c1c1f;*/
+}
+
+/*初始化样式*/
+.wrapper .search-box input
+{
+    width: 50%;
+}
+
+.wrapper .search-box input
+{
+    height: 9vw;
+    border-radius: 10px;
+    /*border: 0.5px solid #f9f9f9;*/
+    background-color: #1c1c1f;padding: 2px 40px 0 20px;
+    outline:none;
+    transition: 1s;
+}
+.wrapper .search-box a{
+    position: absolute;
+    top: 2px;
+    line-height:32px;
+    color: #000000;
+    right: 10px;
+    margin-right: 3vw;
+    margin-bottom: 2vw;
+}
+
+/*获得焦点之后的样式*/
+.wrapper .search-box input:focus
+{
+    transition: width 1s;
+    width: 75%;
+    color: #69696d;
+}
+.wrapper .search-box input:focus + a
+{
+    transition: width 1s;
+    margin-right: 89vw;
+    margin-bottom: 1vw;
+    /*margin-bottom: 2vw;*/
+    top: 2px;
+    right:10px;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    /*background-color: gray;*/
+    color: #69696d;
+}
+
+/*尝试搜索部分*/
+.wrapper .search-box1{
+    height: 10vw;
+    /*background-color: #999999;*/
+    margin-top: 15vw;
+    margin-left: 4vw;
+}
+
+.wrapper .search-box1 h1{
+    /*padding-left: 4vw;*/
+    color:white;
+    font-size:6vw;
+}
+
+/*尝试搜索文字部分*/
+.wrapper .Try-Search{
+    height: 15vw;
+    width: 100%;
+    /*background-color: #2c2c2e;*/
+    display: flex;
+    /*justify-content: center;*/
+}
+
+.wrapper .Try-Search .left{
+    width: 10%;
+    margin-left: 4vw;
+}
+
+.wrapper .Try-Search .left img{
+    margin-left: 3.5vw;
+    margin-top: 5.5vw;
+    width: 6vw;
+}
+
+
+.wrapper .Try-Search .right{
+    width: 100%;
+    margin-right: 2vw;
+    margin-top: 5vw;
+    margin-left: 3vw;
+    border-bottom: 0.1px solid rgba(255,255,255,0.2);
+}
+
+.wrapper .Try-Search .right p{
+    color: white;
+    font-size: 5vw;
+}
+
+/*菜单部分*/
+.wrapper .footer{
+    margin-bottom:-1vw;
+    width: 100%;
+    height: 14vw;
+    border-top: solid 1px #000000;
+    background-color: rgba(0,0,0,0.9);
+    border-top: 0.1px solid rgba(255,255,255,0.2);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.wrapper .footer li{
+    /*li本身的尺寸完全由内容撑起*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #999;
+    user-select: none;
+    cursor: pointer;
+}
+
+.wrapper .footer li img{
+    width: 6vw;
+}
+
+.wrapper .footer li p{
+    font-size: 2.8vw;
+}
+.wrapper .footer li i{
+    font-size: 5vw;
+}
+
+.wrapper .footer .cc{
+    color: #3b82f6;
+}
+
